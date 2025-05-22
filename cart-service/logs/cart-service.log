@@ -1,0 +1,190 @@
+2025-05-22 00:20:15.513  INFO 13796 --- [main] c.shopease.cart.CartServiceApplication   : Starting CartServiceApplication using Java 23.0.1 on DESKTOP-LIOMBGR with PID 13796 (E:\Shopease\cart-service\target\classes started by NISH in E:\Shopease\cart-service)
+2025-05-22 00:20:17.107 DEBUG 13796 --- [main] c.shopease.cart.CartServiceApplication   : Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-05-22 00:20:17.111  INFO 13796 --- [main] c.shopease.cart.CartServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-22 00:20:23.908  INFO 13796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22 00:20:24.748  INFO 13796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 798 ms. Found 2 JPA repository interfaces.
+2025-05-22 00:20:25.181  INFO 13796 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5b58352a-37ac-32be-b047-8d1c9b720d2d
+2025-05-22 00:20:27.118  INFO 13796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2025-05-22 00:20:27.138  INFO 13796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22 00:20:27.140  INFO 13796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-05-22 00:20:28.748  INFO 13796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22 00:20:28.749  INFO 13796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11530 ms
+2025-05-22 00:20:29.006  INFO 13796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22 00:20:29.253  INFO 13796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-05-22 00:20:29.509  INFO 13796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-05-22 00:20:29.655  INFO 13796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22 00:20:33.137  INFO 13796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22 00:20:33.172  INFO 13796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-22 00:20:38.794  INFO 13796 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-22 00:20:38.828  INFO 13796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22 00:20:39.810  WARN 13796 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22 00:20:40.382  INFO 13796 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22 00:20:40.585  WARN 13796 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22 00:20:40.624  INFO 13796 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22 00:20:41.134  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22 00:20:41.142  INFO 13796 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 00:20:41.174  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22 00:20:41.175  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22 00:20:41.253  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22 00:20:41.281  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22 00:20:41.593  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22 00:20:41.595  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22 00:20:41.595  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22 00:20:42.179  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22 00:20:42.185  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22 00:20:42.192  INFO 13796 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22 00:20:42.206  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747853442203 with initial instances count: 3
+2025-05-22 00:20:42.211  INFO 13796 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2025-05-22 00:20:42.215  INFO 13796 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747853442215, current=UP, previous=STARTING]
+2025-05-22 00:20:42.219  INFO 13796 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-LIOMBGR:cart-service:8087: registering service...
+2025-05-22 00:20:42.491  INFO 13796 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-LIOMBGR:cart-service:8087 - registration status: 204
+2025-05-22 00:20:43.369  INFO 13796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2025-05-22 00:20:43.371  INFO 13796 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8087
+2025-05-22 00:20:43.411  INFO 13796 --- [main] c.shopease.cart.CartServiceApplication   : Started CartServiceApplication in 33.089 seconds (JVM running for 34.423)
+2025-05-22 00:25:41.608  INFO 13796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 00:30:41.792  INFO 13796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 00:35:41.850  INFO 13796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 00:40:42.332  INFO 13796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 00:44:12.267  INFO 13796 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22 00:44:12.549  INFO 13796 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22 00:44:15.189  INFO 13796 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2638 ms
+2025-05-22 00:45:44.341  INFO 13796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 00:50:44.395  INFO 13796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 01:01:30.133  INFO 23760 --- [main] c.shopease.cart.CartServiceApplication   : Starting CartServiceApplication using Java 23.0.1 on DESKTOP-LIOMBGR with PID 23760 (E:\Shopease\cart-service\target\classes started by NISH in E:\Shopease\cart-service)
+2025-05-22 01:01:30.503 DEBUG 23760 --- [main] c.shopease.cart.CartServiceApplication   : Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-05-22 01:01:30.506  INFO 23760 --- [main] c.shopease.cart.CartServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-22 01:01:31.772  INFO 23760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22 01:01:32.127  INFO 23760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 335 ms. Found 2 JPA repository interfaces.
+2025-05-22 01:01:32.570  INFO 23760 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5b58352a-37ac-32be-b047-8d1c9b720d2d
+2025-05-22 01:01:33.436  INFO 23760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2025-05-22 01:01:33.456  INFO 23760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22 01:01:33.457  INFO 23760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-05-22 01:01:34.328  INFO 23760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22 01:01:34.330  INFO 23760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3706 ms
+2025-05-22 01:01:34.652  INFO 23760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22 01:01:34.723  INFO 23760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-05-22 01:01:35.119  INFO 23760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-05-22 01:01:35.305  INFO 23760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22 01:01:46.552  INFO 23760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22 01:01:46.599  INFO 23760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-22 01:02:00.604  INFO 23760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-22 01:02:00.622  INFO 23760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22 01:02:01.440  WARN 23760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22 01:02:02.413  INFO 23760 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22 01:02:02.582  WARN 23760 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22 01:02:02.628  INFO 23760 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22 01:02:02.824  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22 01:02:02.833  INFO 23760 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 01:02:02.875  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22 01:02:02.876  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22 01:02:03.367  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22 01:02:03.368  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22 01:02:03.368  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22 01:02:03.369  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22 01:02:03.370  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22 01:02:03.778  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22 01:02:03.783  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22 01:02:03.820  INFO 23760 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22 01:02:03.830  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747855923828 with initial instances count: 3
+2025-05-22 01:02:03.834  INFO 23760 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2025-05-22 01:02:03.836  INFO 23760 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747855923836, current=UP, previous=STARTING]
+2025-05-22 01:02:03.840  INFO 23760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-LIOMBGR:cart-service:8087: registering service...
+2025-05-22 01:02:03.892  INFO 23760 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-LIOMBGR:cart-service:8087 - registration status: 204
+2025-05-22 01:02:03.911  INFO 23760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2025-05-22 01:02:03.913  INFO 23760 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8087
+2025-05-22 01:02:03.931  INFO 23760 --- [main] c.shopease.cart.CartServiceApplication   : Started CartServiceApplication in 36.477 seconds (JVM running for 39.242)
+2025-05-22 01:07:03.376  INFO 23760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 01:12:03.453  INFO 23760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 01:17:03.468  INFO 23760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 01:17:12.565  INFO 23760 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22 01:17:12.568  INFO 23760 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22 01:17:12.573  INFO 23760 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-05-22 01:22:03.615  INFO 23760 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 11:33:26.954  INFO 19208 --- [main] c.shopease.cart.CartServiceApplication   : Starting CartServiceApplication using Java 23.0.1 on DESKTOP-LIOMBGR with PID 19208 (E:\Shopease\cart-service\target\classes started by NISH in E:\Shopease\cart-service)
+2025-05-22 11:33:27.050 DEBUG 19208 --- [main] c.shopease.cart.CartServiceApplication   : Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-05-22 11:33:27.056  INFO 19208 --- [main] c.shopease.cart.CartServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-05-22 11:33:29.259  INFO 19208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-22 11:33:29.816  INFO 19208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 518 ms. Found 2 JPA repository interfaces.
+2025-05-22 11:33:30.722  INFO 19208 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5b58352a-37ac-32be-b047-8d1c9b720d2d
+2025-05-22 11:33:32.137  INFO 19208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2025-05-22 11:33:32.194  INFO 19208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-22 11:33:32.198  INFO 19208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-05-22 11:33:32.808  INFO 19208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-22 11:33:32.810  INFO 19208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5551 ms
+2025-05-22 11:33:33.305  INFO 19208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-22 11:33:33.531  INFO 19208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-05-22 11:33:34.148  INFO 19208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-05-22 11:33:34.491  INFO 19208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-22 11:33:36.790  INFO 19208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-22 11:33:36.838  INFO 19208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-22 11:33:39.232  INFO 19208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-22 11:33:39.269  INFO 19208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22 11:33:40.457  WARN 19208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-22 11:33:41.470  INFO 19208 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-22 11:33:41.745  WARN 19208 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-22 11:33:41.801  INFO 19208 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-22 11:33:42.075  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-22 11:33:42.092  INFO 19208 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 11:33:42.166  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22 11:33:42.168  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22 11:33:42.170  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22 11:33:42.172  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22 11:33:42.174  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22 11:33:42.177  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-22 11:33:42.181  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22 11:33:43.281  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22 11:33:43.290  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-22 11:33:43.299  INFO 19208 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-22 11:33:43.317  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1747893823314 with initial instances count: 0
+2025-05-22 11:33:43.325  INFO 19208 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CART-SERVICE with eureka with status UP
+2025-05-22 11:33:43.331  INFO 19208 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1747893823331, current=UP, previous=STARTING]
+2025-05-22 11:33:43.340  INFO 19208 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-LIOMBGR:cart-service:8087: registering service...
+2025-05-22 11:33:43.406  INFO 19208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2025-05-22 11:33:43.410  INFO 19208 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8087
+2025-05-22 11:33:43.443  INFO 19208 --- [main] c.shopease.cart.CartServiceApplication   : Started CartServiceApplication in 18.541 seconds (JVM running for 20.219)
+2025-05-22 11:33:43.470  INFO 19208 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CART-SERVICE/DESKTOP-LIOMBGR:cart-service:8087 - registration status: 204
+2025-05-22 11:34:13.295  INFO 19208 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-22 11:34:13.298  INFO 19208 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-22 11:34:13.301  INFO 19208 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-22 11:34:13.304  INFO 19208 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-22 11:34:13.307  INFO 19208 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-22 11:34:13.311  INFO 19208 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-05-22 11:34:13.314  INFO 19208 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-22 11:34:13.407  INFO 19208 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-22 11:38:42.197  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 11:43:42.281  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 11:45:13.924  INFO 19208 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-22 11:45:14.272  INFO 19208 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-22 11:45:19.583  INFO 19208 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5158 ms
+2025-05-22 11:48:44.109  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 11:53:44.268  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 11:58:44.589  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:03:46.926  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:08:47.670  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:13:47.749  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:18:47.887  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:23:48.024  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:28:48.653  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:33:48.706  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:38:48.732  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:43:48.902  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:48:49.131  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:53:49.310  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 12:58:49.392  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 13:03:49.454  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 13:07:35.460  WARN 19208 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s893ms26µs400ns).
+2025-05-22 13:08:06.121  WARN 19208 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204) ~[na:na]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-05-22 13:08:49.531  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 13:13:50.223  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-22 13:18:50.230  INFO 19208 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
